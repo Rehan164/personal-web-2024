@@ -1,0 +1,323 @@
+$primary-color: #3eed95;
+$primary-background-color: #0B0B0C;
+$primary-font-color: #F0F0F0;
+
+* {
+    box-sizing: border-box;
+}
+
+html, body, #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "JetBrains Mono", monospace;
+    background-color: $primary-background-color;
+    color: $primary-font-color;
+
+    background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.008) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.008) 1px, transparent 1px);
+    background-size: 10px 10px;
+}
+
+.no-scroll {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+/*  NavBar  */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 100px;
+}
+
+.nav-link {
+    position: relative;
+    color: $primary-font-color;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: $primary-color;
+}
+
+
+/*  Hero Page  */
+.hero-page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.hero-content{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 150px;
+}
+
+.title-name{
+    font-size: 40px;
+    width: fit-content;
+}
+
+
+/* Terminal Bar */
+
+.hero-terminal {
+    z-index: 3;
+    display: flex;
+    height: 600px;
+    width: 900px;
+    flex-direction: column;
+    border-radius: 17.5px;
+    background-image: linear-gradient(#101014, #101014), linear-gradient(90deg, #00FFF0, $primary-color);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    border: 4px solid transparent;
+}
+
+
+.terminal-bar {
+    background-color: #262630;
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 5%;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.terminal-bar-text {
+    width: 85%;
+    display: flex;  
+    justify-content: center;
+}
+
+.terminal-bar > div.icon-btn:first-child {
+    margin-left: 16px;
+}
+
+.terminal-bar > div.icon-btn:not(:first-child) {
+    margin-left: 8px;
+}
+
+.terminal-bar > div.icon-btn:last-child {
+    margin-right: 0.6rem;
+}
+
+.icon-btn {
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+}
+
+.close {
+    background-color: #f96256;
+    border: 1px solid #f65549;
+}
+  
+.max {
+    background-color: #33c948;
+    border: 1px solid #2dbb41;
+}
+  
+.min {
+    background-color: #fdbc3d;
+    border: 1px solid #ffb524;
+}
+
+.terminal-body {
+    width: 100%;
+    height: 95%;
+    background-color: #161624;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.terminal-text {
+    width: 95%;
+    height: 90%;
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    overflow-x: auto; /* Enable horizontal scrolling if content overflows */
+}
+
+.full-width-line {
+    border-top: 1px solid #f0f0f0;
+    width: 100%;
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+}
+
+.input-line {
+    display: flex;
+    width: 100%; /* Ensure the line containing both prompt and input is full width */
+}
+
+.terminal-input {
+    margin-left: 7px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    color: #f0f0f0; 
+    outline: none;
+    flex-grow: 1; /* Make the input take up the remaining space */
+    min-width: 0; /* Prevent input from overflowing */
+}
+
+.term-text {
+    color: $primary-color;
+    white-space: nowrap; /* Prevent the prompt text from wrapping */
+}
+
+#scrollbar1 {
+    padding-right: 10px;
+}
+
+#scrollbar1::-webkit-scrollbar {
+    width: 4px;
+}
+
+#scrollbar1::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: #161624;
+    border: 1px solid #161624;
+}
+
+#scrollbar1::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #f0f0f091;
+}
+
+
+/* Experience Page */
+.experience-card-space {
+    display: flex;
+    justify-content: center;
+    height: 900px;
+    width: 100%;
+}
+
+.work-card {
+    display: flex;
+    width: 900px;
+}
+
+.card-test {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+/* Projects */
+
+.projects{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.p-content {
+    display: flex;
+    width: 100%;
+
+    flex-direction: column;
+    align-items: center;
+    padding-top: 75px;
+
+    h1 {
+        font-size: 40px;
+    }
+    gap: 100px;
+}
+
+.project-card{
+    position: relative;
+    width: 1000px;
+    padding: 50px 50px;
+}
+
+
+
+/* Assignments */
+
+.assignment-page{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.assignment-content{
+    display: flex;
+    width: 100%;
+
+    flex-direction: column;
+    align-items: center;
+    padding-top: 75px;
+
+    h1 {
+        font-size: 40px;
+    }
+    gap: 100px;
+}
+
+
+/* About Page */
+
+.about-page {
+    display: flex;
+    height: 80vh;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Contact Page */
+
+.contact-page {
+    display: flex;
+    height: 80vh;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.auto-side-scroller-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.auto-side-scroller {
+    display: inline-flex;
+    animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
