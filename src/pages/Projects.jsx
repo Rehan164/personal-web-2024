@@ -10,9 +10,9 @@ export const Projects = () => {
             <div className="p-content">
                 <h1>My Projects</h1>
                 <RCard
-                    title="Project Title"
-                    body="Project Body"
-                    link="https://example.com"
+                    title="MetaTube"
+                    body="MetaTube is a simple and intuitive Flutter application designed to help YouTube creators save and manage metadata for their videos, including the title, description, and tags. IMPORTANT: Tutorial followed by Spellthron. Check him out at: https://github.com/Spellthorn."
+                    link="https://github.com/Rehan164/MetaTube"
                 />
             </div>
         </div>
