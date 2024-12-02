@@ -1,6 +1,6 @@
 import React from 'react';
 
-const RCard = ({ title, body, link, video }) => {
+const RCard = ({ title, body, link, video, photo }) => {
     return (
         <div className="project-card border border-black/[0.2] dark:border-white/[0.2]">
             <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black"/>
@@ -25,9 +25,15 @@ const RCard = ({ title, body, link, video }) => {
                     </video>
                 </div>
             )}
+            {photo && (
+                <div className="pt-4 flex justify-center">
+                    <img src={photo} alt={title} width="50%" />
+                </div>
+            )}
         </div>
     );
 };
+
 
 export default RCard;
 

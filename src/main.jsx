@@ -9,9 +9,6 @@ import { Projects } from "./pages/Projects.jsx";
 import { Contact } from "./pages/Contact.jsx";
 import { Assignments } from "./pages/Assignments.jsx";
 
-import ReactGA from "react-ga4";
-ReachGA.initialize('G-3B5CQV39K6');
-
 const router = createBrowserRouter([
   {
         path: "/",
